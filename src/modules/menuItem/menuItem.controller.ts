@@ -20,7 +20,7 @@ export const menuItemController = {
         const items = await menuItemService.getItemsByMenuId(req.params.id)
         res.status(200).json({message:"Fetch MenuItems successfully",items})
     }catch(err){
-        res.status(500).json({message:"Failed to fetch",err})
+        res.status(500).json({message:"Failed to create",err})
     }
 
   }
