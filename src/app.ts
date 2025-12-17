@@ -13,7 +13,11 @@ app.use(express.json())
 
 
 app.use(
-    cors({ origin: "http://localhost:5173",
+    cors({  origin: [
+      "http://localhost:5173",
+      "menu-frontend-beryl.vercel.app"
+    ],
+
     credentials: true
   })
 );
